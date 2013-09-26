@@ -1,0 +1,204 @@
+/* fonts */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700italic&subset=latin,cyrillic);
+
+/* Normalization */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}
+img {max-width: 100% !import;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Layout */
+body {
+	font-family: 'PT Serif', Serif;
+	font-size: 16px;
+	background-color: #fff;
+}
+
+p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+p:first-child {
+	margin-top: 0;
+}
+
+a {
+    color: #303030;
+    /*text-decoration: none;*/
+    -moz-transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+
+.row-1 {
+	max-width: 927px;
+	margin: auto;
+}
+
+.row-2 {
+	max-width: 840px;
+	margin: auto;
+}
+
+.awning-header {
+	height: 120px;
+	background: url('awning-yellow.png') repeat-x;
+	position: relative;
+}
+
+	.logo {
+		font-family: 'Lobster';
+		font-size: 3.3em;
+		color: #000;
+		text-align: center;
+		padding-top: .4em;
+	}
+
+	.logo a {
+		color: #000;
+		text-decoration: none;
+	}
+
+	.logo-subtitle {
+		font-family: 'Lobster';
+		font-size: .9em;
+		color: #000;
+		text-align: center;
+		padding-top: .7em;
+	}
+
+	.menu-items {
+		position: absolute;
+		right: 80px;
+		top: 45px;
+	}
+
+		.menu-items a {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: .7em;
+			font-size: 1.2em;
+			color: #000;
+		}
+
+		.blog-link {
+			font-family: 'Lobster';
+			position: relative;
+			top: -3px;
+		}
+
+			.blog-link:after {
+                content: " →";
+                font-size: .7em;
+                position: absolute;
+                right: -20px;
+                top: 4px;
+            }
+
+.works-slider {
+	margin-top: 3em;
+	height: 850px;
+	overflow: hidden;
+
+}
+
+	.fotorama__thumbs {
+		margin-top: 10px !important;
+		margin-bottom: 12px !important;
+	}
+
+	.fotorama__caption {
+		text-align: center;
+		font-style: normal;
+		font-size: .9em;
+		line-height: 1.5em;
+		margin: auto;
+		margin-top: 5em;
+		color: #4c4c4c;
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+
+	.works-categories {
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	.works-categories li {
+		list-style: none;
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		margin-right: .9em;
+		font-family: 'PT Sans', sans-serif;
+		font-weight: bold;
+		font-size: .8em;
+		color: #4c4c4c;
+		text-transform: uppercase;
+	}
+
+		.category-link {
+			text-decoration: none;
+			color: #4c4c4c;
+			opacity: .6;
+		}
+			.category-link:hover, .category-link-active {
+				opacity: 1;
+			}
+
+	.works-categories li:after {
+		content: "·";
+		margin-left: 1em;
+	}
+
+	.works-categories li:last-child:after {
+		content: "";
+	}
+
+.about-me {
+	margin-top: 1.2em;
+	margin-bottom: 2em;
+	padding-top: 2em;
+	border-top: 1px solid #e6e6e6;
+}
+
+	.about-me-pic {
+		display: inline-block;
+		vertical-align: top;
+		width: 13%;
+		max-width: 120px;
+	}
+
+	.about-me-text {
+		display: inline-block;
+		vertical-align: top;
+		width: 55%;
+		font-family: 'PT Serif', serif;
+		font-size: .91em;
+		line-height: 1.45em;
+		color: #4c4c4c;
+		margin-left: 2.6em;
+	}
+
+		.about-me-text h3 {
+			font-size: 1.6em;
+			font-weight: bold;
+		}
+
+	.about-me-contact {
+		display: inline-block;
+		vertical-align: top;
+		width: 18%;
+		margin-left: 5em;
+		margin-top: 3em;
+		font-family: 'PT Sans', sans-serif;
+		font-size: .8em;
+		color: #888;
+	}
+
+		.about-me-contact a {
+			color: #888;
+		}
